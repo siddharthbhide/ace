@@ -61,7 +61,7 @@
         android:layout_marginLeft="184dp"
         android:layout_marginTop="33dp"
         android:text="Need Help?"
-        android:background="null"
+        android:background="@android:color/transparent"
         android:onClick="OnClickNeedHelp"/>
 
 
