@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".LoginActivity">
+    <!-- Image Ref: - https://www.flaticon.com/free-icons/user-icon-->
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="373dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@mipmap/ic_user"
+        android:drawablePadding="10dp"
+        android:hint="User Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="373dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/editUserName"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@mipmap/ic_password"
+        android:drawablePadding="10dp"
+        android:hint="User Name"
+        android:inputType="textPassword" />
+
+    <ImageButton
+        android:id="@+id/landingPagePinButton"
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/editPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="105dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:src="@mipmap/ic_login"
+        android:onClick="onClickLogIn"/>
+
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/landingPagePinButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="33dp"
+        android:text="Need Help?"
+        android:background="null"
+        android:onClick="OnClickNeedHelp"/>
+
+
+</RelativeLayout>
